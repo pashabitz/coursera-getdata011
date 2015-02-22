@@ -15,3 +15,5 @@ Relies on the dplyr library.
 The function *loaddata* loads raw data from a given subdirectory ("test" or "train"), keeping only variables that are an average or a standard deviation, into a data frame. It then adds to the data frame the activity name and the subject.
 
 The function *runanalysis* uses the above function to load both test and train data from the two respective subdirectories and combines the two data frames. Then, it creates a new data frame, grouped by subject and activity. Finally, it creates a summary data frame, taking the average of every variable, for each subject and activity.
+
+The file tidy.txt included here is the result of calling write.table on the output of runanalysis.
